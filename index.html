@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+<head>
+	<!-- meta -->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<title>Jeu de 21</title>
+	
+	<!-- styles -->
+	<link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+	
+	<!-- scripts -->
+	<script src="assets/scripts/Card.js"></script>
+	<script src="assets/scripts/Game.js"></script>
+	<script src="assets/scripts/Player.js"></script>
+	<script src="assets/scripts/Board.js"></script>
+	<script src="assets/scripts/script.js"></script>
+</head>
+<body>
+	<h1>Le 21</h1>
+	
+	<!-- Formulaire de choix de nombre de joueurs -->
+	<form data-js-form>
+		<label for="numPlayers">Combien de joueurs à cette table ?</label>
+		<input type="number" id="numPlayers" name="numPlayers" min="1" value="1" data-js-input="numPlayers" required>
+		<button class="submit" data-js-submit>Jouer !</button>
+	</form>
+	
+	<!-- Contenant du jeu -->
+	<div data-js-game-wrapper></div>
+	
+	<!-- Fin de partie -->
+	<div data-js-replay></div>
+</body>
+</html>

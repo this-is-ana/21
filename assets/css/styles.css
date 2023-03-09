@@ -1,0 +1,44 @@
+/* GENERIC */
+
+* {
+    font-family: sans-serif;
+}
+
+/* ELEMENTS */
+
+body {
+	font-size: 20px;
+	padding: 20px 40px;
+}
+
+h1 {
+	margin-bottom: 50px;
+}
+
+label {
+	display: block;
+	margin-bottom: 20px;
+}
+
+div {
+	margin-bottom: 30px;
+}
+
+.submit {
+	margin-left: 10px;
+}
+
+/* Statut joueur */
+.inactive, .lost {
+	pointer-events: none;
+	opacity: 0.4;
+}
+
+.lost {
+	border: 1px solid red;
+}
+
+.won {
+	border: 5px double green;
+	opacity: 0.8;
+}
